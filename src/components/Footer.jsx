@@ -15,9 +15,9 @@ export default function Footer() {
         </div>
 
         <div className="flex gap-6 font-body text-sm">
-          <a href="#" className="hover:text-white transition-colors">Impressum</a>
-          <a href="#" className="hover:text-white transition-colors">Datenschutz</a>
-          <a href="#" className="hover:text-white transition-colors">AGB</a>
+          <a href="https://www.yogawithania.com/privacy" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Impressum</a>
+          <a href="https://www.yogawithania.com/privacy" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Datenschutz</a>
+          <a href="https://www.yogawithania.com/terms" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">AGB</a>
         </div>
 
       </div>
