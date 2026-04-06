@@ -44,7 +44,7 @@ export default function ProblemSection() {
       icon: BatteryWarning,
       image: `${import.meta.env.BASE_URL}neben-sich-stehen.jpg`,
       title: "Du stehst 'neben dir'",
-      desc: "Nach außen hältst du alles zusammen. Aber innerlich fragst du dich, wann du das letzte Mal wirklich Energie hattest. Wann du dich das letzte Mal leicht gefühlt hast. Nicht körperlich leicht. Frei."
+      desc: "Die Energie von früher ist weg. Du fühlst dich oft schwer, gestresst und unwohl in deiner eigenen Haut. Du wünschst dir dieses Gefühl von Leichtigkeit und Stärke zurück."
     }
   ];
 
@@ -52,14 +52,12 @@ export default function ProblemSection() {
     <section className="py-24 md:py-32 px-6 bg-background relative z-30 overflow-visible" ref={containerRef} style={{ minHeight: '600px' }}>
       <div className="max-w-6xl mx-auto">
         <div className="problem-intro text-center max-w-3xl mx-auto mb-16">
-          <p className="font-mono text-accent text-xs tracking-widest uppercase font-bold mb-4">Kommt dir das bekannt vor?</p>
+          <p className="font-mono text-accent text-xs tracking-widest uppercase font-bold mb-4">Niemand hat dich darauf vorbereitet.</p>
           <h2 className="font-heading text-[clamp(2rem,5vw,3rem)] leading-tight text-text mb-6">
-            Dein Körper hat sich verändert. <br className="hidden md:block"/>Die Spielregeln auch.
+            Irgendwann hat sich alles verändert. <br className="hidden md:block"/>Und keiner hat dir gesagt warum.
           </h2>
           <p className="font-body text-text/80 text-lg leading-relaxed">
-            Ab 40 verändern sich die Hormone. Der Körper braucht jetzt andere Reize. 
-            Wenn dein Körper sich steifer, schwerer oder empfindlicher anfühlt als früher — 
-            dann ist das kein Versagen. Es ist ein Signal.
+Du hast nichts falsch gemacht. Dein Körper folgt jetzt einfach anderen Regeln als mit 30. Aber das hat dir niemand erklärt. Nicht dein Arzt, nicht dein Trainer, nicht Google. Du hast nur gemerkt dass nichts mehr funktioniert wie früher. Und irgendwann hast du angefangen zu glauben, es liegt an dir.
           </p>
         </div>
 

@@ -44,10 +44,10 @@ export default function FailedSolutions() {
       <div className="max-w-5xl mx-auto">
         <div className="fail-header text-center mb-16">
           <h2 className="font-heading text-[clamp(2rem,5vw,3rem)] leading-tight mb-6">
-            Warum die üblichen Wege, die wir kennen, nie wirklich funktionieren...
+            Vielleicht lag es nie an deiner Disziplin.
           </h2>
           <p className="font-body text-background/70 text-lg max-w-2xl mx-auto">
-            Was mit 30 funktioniert hat, schadet dir jetzt oft mehr. Dein Körper braucht keine härteren Workouts – er braucht intelligentere Reize.
+           Sondern daran, dass alles was du probiert hast für einen anderen Körper gemacht war. Für einen jüngeren. Einen männlichen. Einen der nicht gerade hormonell Kopf steht.
           </p>
         </div>
 
