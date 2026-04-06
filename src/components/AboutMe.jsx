@@ -32,7 +32,7 @@ export default function AboutMe() {
         <div className="about-image relative">
           <div className="aspect-[4/5] rounded-[3rem] overflow-hidden shadow-2xl shadow-dark/10 border-8 border-surface relative z-10">
             <img 
-              src="/ania-about.PNG" 
+              src={`${import.meta.env.BASE_URL}ania-about.PNG`}
               alt="Ania - Yoga & Movement Coach" 
               className="w-full h-full object-cover"
             />

@@ -5,7 +5,7 @@ export default function Footer() {
         
         <div className="flex flex-col items-center md:items-start gap-3">
           <img 
-            src="/silhouette-white.png" 
+            src={`${import.meta.env.BASE_URL}silhouette-white.png`}
             alt="Ania Yoga Silhouette" 
             className="h-14 w-auto opacity-70"
           />

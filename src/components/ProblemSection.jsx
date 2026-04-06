@@ -30,19 +30,19 @@ export default function ProblemSection() {
   const problems = [
     {
       icon: Activity,
-      image: "/stiffness-problem.jpg",
+      image: `${import.meta.env.BASE_URL}stiffness-problem.jpg`,
       title: "Gelenke, die nicht mehr mitmachen",
       desc: "Die normalen Fitness-Workouts tun nur noch weh. Deine Schultern und Hüften fühlen sich steif an, als würde die Schmierung fehlen. Herkömmliches Training macht es eher schlimmer als besser."
     },
     {
       icon: Flame,
-      image: "/zunahme.jpg",
+      image: `${import.meta.env.BASE_URL}zunahme.jpg`,
       title: "Unerklärliche Gewichtszunahme",
       desc: "Du isst wie immer, bewegst dich wie immer, aber die Waage zeigt nach oben. Der Bauch wird weicher. Es fühlt sich an, als hättest du die Kontrolle über deinen eigenen Körper verloren."
     },
     {
       icon: BatteryWarning,
-      image: "/neben-sich-stehen.jpg",
+      image: `${import.meta.env.BASE_URL}neben-sich-stehen.jpg`,
       title: "Du stehst 'neben dir'",
       desc: "Die Energie von früher ist weg. Du fühlst dich oft schwer, gestresst und unwohl in deiner eigenen Haut. Du wünschst dir dieses Gefühl von Leichtigkeit und Stärke zurück."
     }

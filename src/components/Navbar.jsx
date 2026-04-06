@@ -21,7 +21,7 @@ export default function Navbar() {
     }`}>
       <div className="flex items-center gap-1.5 md:gap-3 font-heading font-semibold text-base md:text-xl tracking-wide shrink-0">
         <img 
-          src="/silhouette-black.png" 
+          src={`${import.meta.env.BASE_URL}silhouette-black.png`}
           alt="Ania Yoga Logo" 
           className={`${isScrolled ? 'h-6' : 'h-8'} w-auto transition-all duration-500`}
         />
