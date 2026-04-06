@@ -44,7 +44,7 @@ export default function ProblemSection() {
       icon: BatteryWarning,
       image: `${import.meta.env.BASE_URL}neben-sich-stehen.jpg`,
       title: "Du stehst 'neben dir'",
-      desc: "Die Energie von früher ist weg. Du fühlst dich oft schwer, gestresst und unwohl in deiner eigenen Haut. Du wünschst dir dieses Gefühl von Leichtigkeit und Stärke zurück."
+      desc: "Nach außen hältst du alles zusammen. Aber innerlich fragst du dich, wann du das letzte Mal wirklich Energie hattest. Wann du dich das letzte Mal leicht gefühlt hast. Nicht körperlich leicht. Frei."
     }
   ];
 

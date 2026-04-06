@@ -51,7 +51,7 @@ export default function AboutMe() {
           
           <div className="font-body text-text/80 text-lg space-y-6 leading-relaxed mb-10">
             <p>
-              Ich bin Ania, Jahrgang 1975. Ich bin Mutter, Ehefrau und ich stecke mitten in derselben Phase wie du. 
+              Ich bin Ania, Jahrgang 1975. Ich bin Mutter, Ehefrau und ich stecke mitten in derselben phase wie du. 
               Ich kenne die Tage, an denen sich der Körper "schwer" anfühlt, die Gelenke zwicken und die Energie scheinbar über Nacht verschwindet.
             </p>
             <p>
@@ -65,9 +65,14 @@ export default function AboutMe() {
             </p>
           </div>
 
-          <div className="flex flex-col gap-1">
-            <p className="font-heading italic text-2xl text-text">Deine Ania</p>
-            <p className="font-mono text-[10px] text-text/40 uppercase tracking-widest">Gründerin der sanften 3D-Methode</p>
+          <div className="flex flex-col gap-2">
+            <img 
+              src={`${import.meta.env.BASE_URL}ania-sign.png`} 
+              alt="Ania Signature" 
+              className="h-10 w-auto self-start opacity-90"
+            />
+            <p className="font-mono text-[10px] text-text/40 uppercase tracking-widest">700K+ Follower auf Instagram</p>
+            <p className="font-mono text-[10px] text-text/40 uppercase tracking-widest">Gründerin der 3D Methode</p>
           </div>
         </div>
 
