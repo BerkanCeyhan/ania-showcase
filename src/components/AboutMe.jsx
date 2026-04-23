@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 
-export default function AboutMe() {
+export default function AboutMe({ content }) {
   const containerRef = useRef(null);
 
   useEffect(() => {
@@ -44,25 +44,15 @@ export default function AboutMe() {
 
         {/* Right: Content */}
         <div className="about-content">
-          <p className="font-mono text-accent text-xs tracking-widest uppercase font-bold mb-4">Ein Wort von Herz zu Herz</p>
+          <p className="font-mono text-accent text-xs tracking-widest uppercase font-bold mb-4">{content.eyebrow}</p>
           <h2 className="font-heading text-[clamp(2.5rem,5vw,3.5rem)] leading-tight text-text mb-8">
-            Ich weiß genau, <br />wie du dich fühlst.
+            {content.title}
           </h2>
           
           <div className="font-body text-text/80 text-lg space-y-6 leading-relaxed mb-10">
-            <p>
-              Ich bin Ania, Jahrgang 1975. Ich bin Mutter, Ehefrau und ich stecke mitten in derselben phase wie du. 
-              Ich kenne die Tage, an denen sich der Körper "schwer" anfühlt, die Gelenke zwicken und die Energie scheinbar über Nacht verschwindet.
-            </p>
-            <p>
-              Da draußen gibt es so viele laute Versprechungen – meistens von Menschen, die noch nie in einem weiblichen Körper ab 40 steckten. 
-              Sie erzählen dir von "noch härterem Training" und "noch weniger Kalorien". Aber sie verstehen nicht, dass dein Körper jetzt keine Härte braucht, sondern <strong>intelligente Zuwendung</strong>.
-            </p>
-            <p>
-              Hormone sind kein Hindernis, das man bekämpfen muss. Sie sind ein Kompass. 
-              Mein Ansatz ist nicht, dich zu "reparieren" – denn du bist nicht kaputt. 
-              Ich helfe dir, die neuen Spielregeln deines Körpers zu verstehen, damit du dich wieder so leicht, beweglich und strahlend fühlst, wie du es verdienst.
-            </p>
+            {content.paragraphs.map((paragraph) => (
+              <p key={paragraph}>{paragraph}</p>
+            ))}
           </div>
 
           <div className="flex flex-col gap-2">
@@ -71,8 +61,8 @@ export default function AboutMe() {
               alt="Ania Signature" 
               className="h-10 w-auto self-start opacity-90"
             />
-            <p className="font-mono text-[10px] text-text/40 uppercase tracking-widest">700K+ Follower auf Instagram</p>
-            <p className="font-mono text-[10px] text-text/40 uppercase tracking-widest">Gründerin der 3D Methode</p>
+            <p className="font-mono text-[10px] text-text/40 uppercase tracking-widest">{content.followers}</p>
+            <p className="font-mono text-[10px] text-text/40 uppercase tracking-widest">{content.role}</p>
           </div>
         </div>
 

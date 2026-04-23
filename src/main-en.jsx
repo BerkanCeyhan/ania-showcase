@@ -9,6 +9,6 @@ gsap.registerPlugin(ScrollTrigger)
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App locale="de" />
+    <App locale="en" />
   </StrictMode>,
 )

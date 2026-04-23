@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 
-export default function SocialProof() {
+export default function SocialProof({ content }) {
   const containerRef = useRef(null);
 
   useEffect(() => {
@@ -20,22 +20,22 @@ export default function SocialProof() {
 
   const reviews = [
     {
-      name: "Sabine K.",
-      result: "-14kg & volle Energie",
+      name: content.reviews[0].name,
+      result: content.reviews[0].result,
       image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=400&q=80",
-      text: "Früher habe ich mich morgens vor dem Spiegel geschämt. Jede Diät endete in Heißhunger-Attacken. Erst durch Anias Hormon-Formel habe ich verstanden, dass mein Körper nicht gegen mich arbeitet. Heute fühle ich mich wieder leicht – wie in meinen 20ern."
+      text: content.reviews[0].text
     },
     {
-      name: "Marianna C.",
-      result: "-21kg & schmerzfrei",
+      name: content.reviews[1].name,
+      result: content.reviews[1].result,
       image: "https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&fit=crop&w=400&q=80",
-      text: "Ich dachte, die Gelenkschmerzen und das Gewicht gehören ab 45 einfach dazu. Ich hatte Angst, nie wieder meine Lieblingskleider tragen zu können. Jetzt sind 21kg weg, ganz ohne Hungern oder Zwang. Dieses neue Selbstvertrauen ist unbezahlbar."
+      text: content.reviews[1].text
     },
     {
-      name: "Olivia B.",
-      result: "-12kg & innere Ruhe",
+      name: content.reviews[2].name,
+      result: content.reviews[2].result,
       image: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=400&q=80",
-      text: "Der ständige Kampf gegen den eigenen Bauch war zermürbend. Die Scham am Strand war mein ständiger Begleiter. Durch die sanfte 3D-Methode ist der Heißhunger einfach verschwunden. Ich habe nicht nur Gewicht verloren, sondern endlich meinen Frieden mit mir selbst gefunden."
+      text: content.reviews[2].text
     }
   ];
 
@@ -44,22 +44,16 @@ export default function SocialProof() {
       <div className="max-w-6xl mx-auto">
         
         <div className="proof-stats flex flex-wrap justify-center gap-8 md:gap-16 mb-20 text-center">
-          <div className="proof-stat">
-            <p className="font-mono text-3xl md:text-4xl font-bold text-accent mb-2">1.293+</p>
-            <p className="font-body text-sm text-text/70 uppercase tracking-wide">Glückliche Frauen</p>
-          </div>
-          <div className="proof-stat">
-            <p className="font-mono text-3xl md:text-4xl font-bold text-accent mb-2">4.9/5</p>
-            <p className="font-body text-sm text-text/70 uppercase tracking-wide">Sterne Bewertung</p>
-          </div>
-          <div className="proof-stat">
-            <p className="font-mono text-3xl md:text-4xl font-bold text-accent mb-2">100%</p>
-            <p className="font-body text-sm text-text/70 uppercase tracking-wide">Ohne Heißhunger</p>
-          </div>
+          {content.stats.map((stat) => (
+            <div key={stat.label} className="proof-stat">
+              <p className="font-mono text-3xl md:text-4xl font-bold text-accent mb-2">{stat.value}</p>
+              <p className="font-body text-sm text-text/70 uppercase tracking-wide">{stat.label}</p>
+            </div>
+          ))}
         </div>
 
         <div className="text-center mb-16">
-          <h2 className="font-heading text-[clamp(2rem,4vw,3rem)] text-text">Stimmen von Frauen,<br className="hidden md:block"/>die in der gleichen Situation waren.</h2>
+          <h2 className="font-heading text-[clamp(2rem,4vw,3rem)] text-text">{content.title}</h2>
         </div>
 
         <div className="proof-cards-container grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
@@ -89,7 +83,7 @@ export default function SocialProof() {
                 </div>
                 <div>
                   <p className="font-body font-bold text-sm text-text">{review.name}</p>
-                  <p className="font-mono text-[9px] text-text/40 uppercase tracking-[0.1em]">Verifizierte Teilnehmerin</p>
+                  <p className="font-mono text-[9px] text-text/40 uppercase tracking-[0.1em]">{content.verified}</p>
                 </div>
               </div>
             </div>

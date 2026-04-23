@@ -1,4 +1,4 @@
-export default function Footer() {
+export default function Footer({ content }) {
   return (
     <footer className="bg-[#30302d] text-white/60 py-12 px-6 rounded-t-[3rem] mt-[-2rem] relative z-20">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
@@ -15,15 +15,15 @@ export default function Footer() {
         </div>
 
         <div className="flex gap-6 font-body text-sm">
-          <a href="https://www.yogawithania.com/privacy" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Impressum</a>
-          <a href="https://www.yogawithania.com/privacy" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Datenschutz</a>
-          <a href="https://www.yogawithania.com/terms" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">AGB</a>
+          <a href="https://www.yogawithania.com/privacy" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">{content.imprint}</a>
+          <a href="https://www.yogawithania.com/privacy" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">{content.privacy}</a>
+          <a href="https://www.yogawithania.com/terms" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">{content.terms}</a>
         </div>
 
       </div>
       
       <div className="max-w-6xl mx-auto mt-8 text-center md:text-left font-mono text-[10px] uppercase text-white/30">
-        &copy; {new Date().getFullYear()} Ania Yoga Coaching. Alle Rechte vorbehalten.
+        &copy; {new Date().getFullYear()} {content.copyright}
       </div>
     </footer>
   );

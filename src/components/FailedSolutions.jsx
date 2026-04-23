@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 
-export default function FailedSolutions() {
+export default function FailedSolutions({ content }) {
   const containerRef = useRef(null);
 
   useEffect(() => {
@@ -23,19 +23,19 @@ export default function FailedSolutions() {
 
   const solutions = [
     {
-      title: "Klassisches Fitness-Training",
+      title: content.cards[0].title,
       image: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=800&q=80", // Heavy/Cold Gym
-      desc: "Die 30-jährigen Trainer lassen dich springen und Gewichte stemmen. Das Resultat? Deine Gelenke schmerzen, dein Cortisolspiegel steigt, und du nimmst durch den Stress sogar zu."
+      desc: content.cards[0].desc
     },
     {
-      title: "Radikale Diäten",
+      title: content.cards[1].title,
       image: "https://images.unsplash.com/photo-1494390248081-4e521a5940db?auto=format&fit=crop&w=800&q=80", // Stress/Measuring
-      desc: "Du isst weniger, fühlst dich schwach und dein Stoffwechsel fährt herunter. Dein Körper klammert sich an jedes Gramm, weil er in der hormonellen Umstellung Sicherheit braucht, keinen Mangel."
+      desc: content.cards[1].desc
     },
     {
-      title: "Langweilige Physiotherapie",
+      title: content.cards[2].title,
       image: "https://images.unsplash.com/photo-1519824145371-296894a0daa9?auto=format&fit=crop&w=800&q=80", // Clinical/Hospital vibe
-      desc: "Man behandelt isoliert deine schmerzende Schulter oder Hüfte, aber ignoriert den Rest deines Körpers. Die Schmerzen kommen immer wieder zurück, weil die wahre Ursache nicht gelöst wird."
+      desc: content.cards[2].desc
     }
   ];
 
@@ -44,10 +44,10 @@ export default function FailedSolutions() {
       <div className="max-w-5xl mx-auto">
         <div className="fail-header text-center mb-16">
           <h2 className="font-heading text-[clamp(2rem,5vw,3rem)] leading-tight mb-6">
-            Vielleicht lag es nie an deiner Disziplin.
+            {content.title}
           </h2>
           <p className="font-body text-background/70 text-lg max-w-2xl mx-auto">
-           Sondern daran, dass alles was du probiert hast für einen anderen Körper gemacht war. Für einen jüngeren. Einen männlichen. Einen der nicht gerade hormonell Kopf steht.
+            {content.intro}
           </p>
         </div>
 
@@ -87,7 +87,7 @@ export default function FailedSolutions() {
 
         <div className="fail-header mt-16 text-center">
           <p className="font-heading italic text-2xl text-accent">
-            Wenn diese Lösungen wirklich die Antwort wären, hätten sie längst funktioniert.
+            {content.outro}
           </p>
         </div>
       </div>

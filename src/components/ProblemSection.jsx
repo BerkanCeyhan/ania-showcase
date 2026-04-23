@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { Activity, Flame, BatteryWarning } from 'lucide-react';
 
-export default function ProblemSection() {
+export default function ProblemSection({ content }) {
   const containerRef = useRef(null);
 
   useEffect(() => {
@@ -31,20 +31,17 @@ export default function ProblemSection() {
     {
       icon: Activity,
       image: `${import.meta.env.BASE_URL}stiffness-problem.jpg`,
-      title: "Gelenke, die nicht mehr mitmachen",
-      desc: "Die normalen Fitness-Workouts tun nur noch weh. Deine Schultern und Hüften fühlen sich steif an, als würde die Schmierung fehlen. Herkömmliches Training macht es eher schlimmer als besser."
+      ...content.cards[0],
     },
     {
       icon: Flame,
       image: `${import.meta.env.BASE_URL}zunahme.jpg`,
-      title: "Unerklärliche Gewichtszunahme",
-      desc: "Du isst wie immer, bewegst dich wie immer, aber die Waage zeigt nach oben. Der Bauch wird weicher. Es fühlt sich an, als hättest du die Kontrolle über deinen eigenen Körper verloren."
+      ...content.cards[1],
     },
     {
       icon: BatteryWarning,
       image: `${import.meta.env.BASE_URL}neben-sich-stehen.jpg`,
-      title: "Du stehst 'neben dir'",
-      desc: "Die Energie von früher ist weg. Du fühlst dich oft schwer, gestresst und unwohl in deiner eigenen Haut. Du wünschst dir dieses Gefühl von Leichtigkeit und Stärke zurück."
+      ...content.cards[2],
     }
   ];
 
@@ -52,12 +49,12 @@ export default function ProblemSection() {
     <section className="py-24 md:py-32 px-6 bg-background relative z-30 overflow-visible" ref={containerRef} style={{ minHeight: '600px' }}>
       <div className="max-w-6xl mx-auto">
         <div className="problem-intro text-center max-w-3xl mx-auto mb-16">
-          <p className="font-mono text-accent text-xs tracking-widest uppercase font-bold mb-4">Niemand hat dich darauf vorbereitet.</p>
+          <p className="font-mono text-accent text-xs tracking-widest uppercase font-bold mb-4">{content.eyebrow}</p>
           <h2 className="font-heading text-[clamp(2rem,5vw,3rem)] leading-tight text-text mb-6">
-            Irgendwann hat sich alles verändert. <br className="hidden md:block"/>Und keiner hat dir gesagt warum.
+            {content.title}
           </h2>
           <p className="font-body text-text/80 text-lg leading-relaxed">
-Du hast nichts falsch gemacht. Dein Körper folgt jetzt einfach anderen Regeln als mit 30. Aber das hat dir niemand erklärt. Nicht dein Arzt, nicht dein Trainer, nicht Google. Du hast nur gemerkt dass nichts mehr funktioniert wie früher. Und irgendwann hast du angefangen zu glauben, es liegt an dir.
+            {content.intro}
           </p>
         </div>
 
