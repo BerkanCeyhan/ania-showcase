@@ -213,7 +213,7 @@ export const siteContent = {
     },
     hero: {
       badge: 'Exclusive Body Reset Coaching',
-      titleTop: 'Come back to yourself.',
+      titleTop: 'Discover yourself again.',
       titleAccent: 'Lose weight. Move with ease.',
       description:
         'A gentle Body Reset approach for women over 40 who want to work with hormonal changes, lose fat, build strength, and feel at home in their body again.',
