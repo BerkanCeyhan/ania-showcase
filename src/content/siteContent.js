@@ -89,7 +89,7 @@ export const siteContent = {
       stats: [
         { value: '6', label: 'Wochen klarer Struktur' },
         { value: '6', label: 'geführte Kernmodule' },
-        { value: '5-6', label: 'Trainingseinheiten pro Woche' },
+        { value: '4-5', label: 'Trainingseinheiten pro Woche' },
       ],
       openCta: 'Einblick ins Programm',
       closeCta: 'Einblick schließen',
@@ -135,6 +135,7 @@ export const siteContent = {
       ],
       followers: '700K+ Follower auf Instagram',
       role: 'Coach für hormonfreundliche Transformation ab 40',
+      signatureImage: 'ania-sign.png',
     },
     socialProof: {
       stats: [
@@ -292,7 +293,7 @@ export const siteContent = {
       stats: [
         { value: '6', label: 'weeks of clear structure' },
         { value: '6', label: 'guided core modules' },
-        { value: '5-6', label: 'training sessions per week' },
+        { value: '4-5', label: 'training sessions per week' },
       ],
       openCta: 'Explore the Program',
       closeCta: 'Close Overview',
@@ -338,6 +339,7 @@ export const siteContent = {
       ],
       followers: '700K+ followers on Instagram',
       role: 'Coach for hormone-friendly transformation after 40',
+      signatureImage: 'ania-sign-english.png',
     },
     socialProof: {
       stats: [

@@ -57,7 +57,7 @@ export default function AboutMe({ content }) {
 
           <div className="flex flex-col gap-2">
             <img 
-              src={`${import.meta.env.BASE_URL}ania-sign.png`} 
+              src={`${import.meta.env.BASE_URL}${content.signatureImage}`} 
               alt="Ania Signature" 
               className="h-10 w-auto self-start opacity-90"
             />
