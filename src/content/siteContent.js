@@ -131,8 +131,7 @@ export const siteContent = {
       supportTitle: 'Persönliche Begleitung',
       support: [
         'Wöchentliche Live-Calls zu Themen wie Bauchfett, Nachtschweiß, Stimmungsschwankungen und Gewichtsveränderungen.',
-        '1:1 Calls je nach Gruppengröße: bei 1 Person wöchentlich, bei 2-5 Frauen alle 2 Wochen, ab 6 Frauen alle 3 Wochen.',
-      ],
+   ],
       cta: 'Kennenlern-Call buchen',
     },
     about: {
@@ -345,7 +344,6 @@ export const siteContent = {
       supportTitle: 'Personal Support',
       support: [
         'Weekly live calls on topics like belly fat, night sweats, mood swings, and changing body weight.',
-        '1:1 calls depending on group size: weekly for one client, every two weeks for 2-5 women, and every three weeks from 6 clients onward.',
       ],
       cta: 'Book a Discovery Call',
     },
