@@ -152,6 +152,26 @@ export default function ProgramSnapshot({ content }) {
                   </div>
                 </div>
 
+                <div className="bg-background rounded-[2.25rem] border border-text/5 p-7 md:p-8 shadow-[0_20px_50px_-40px_rgba(26,26,24,0.3)]">
+                  <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-accent font-bold mb-5">{content.methodTitle}</p>
+                  <p className="font-body text-text/78 leading-relaxed mb-5">{content.methodIntro}</p>
+
+                  <div className="space-y-4 mb-6">
+                    {content.methodBullets.map((item) => (
+                      <div key={item} className="flex items-start gap-3">
+                        <div className="w-6 h-6 rounded-full bg-accent/10 flex items-center justify-center shrink-0 mt-0.5">
+                          <Check className="w-3.5 h-3.5 text-accent" strokeWidth={3} />
+                        </div>
+                        <p className="font-body text-text/72 leading-relaxed">{item}</p>
+                      </div>
+                    ))}
+                  </div>
+
+                  <p className="font-heading text-[1.8rem] leading-tight text-text">
+                    {content.methodResult}
+                  </p>
+                </div>
+
                 <div className="bg-[#30302d] rounded-[2.25rem] border border-white/5 p-7 md:p-8 text-white">
                   <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-accent font-bold mb-5">{content.supportTitle}</p>
                   <div className="space-y-4 mb-7">

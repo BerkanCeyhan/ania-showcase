@@ -112,12 +112,22 @@ export const siteContent = {
       ],
       includedTitle: 'Alles, was enthalten ist',
       included: [
-        '6-Wochen Trainingsplan mit 5-6 geführten Sessions pro Woche',
+        '6-Wochen Trainingsplan mit 4-5 geführten Sessions pro Woche',
         'Kuratiertes Nutrition- und Lifestyle-Playbook',
         '7-Tage Meal Plan für einen leichten, klaren Einstieg',
         'Supplement-Empfehlungen mit klarer Orientierung',
         'Strukturierter Progress Tracker für sichtbare Fortschritte',
       ],
+      methodTitle: 'Functional Yoga Workouts™',
+      methodIntro:
+        'Dieses Programm basiert auf meiner Functional Yoga Workouts™ Methode – ein progressiver Ansatz, der Yoga, Mobility und Kraft in einem wirksamen System verbindet.',
+      methodBullets: [
+        'Das sind keine klassischen Yogastunden.',
+        'Jedes Workout arbeitet mit funktionellen, zusammengesetzten Bewegungen, um Kraft aufzubauen, Mobilität zu verbessern und die Bewegungsmuster deines Alltags zu unterstützen.',
+        'Die Sessions bauen bewusst aufeinander auf, damit dein Körper sich Schritt für Schritt anpassen, stärker werden und sich freier bewegen kann – ohne unnötigen Stress.',
+      ],
+      methodResult:
+        'Das Ergebnis: ein Körper, der sich stärker, beweglicher und wieder mehr nach dir selbst anfühlt.',
       supportTitle: 'Persönliche Begleitung',
       support: [
         'Wöchentliche Live-Calls zu Themen wie Bauchfett, Nachtschweiß, Stimmungsschwankungen und Gewichtsveränderungen.',
@@ -316,12 +326,22 @@ export const siteContent = {
       ],
       includedTitle: 'Everything included',
       included: [
-        'A 6-week training plan with 5-6 guided sessions per week',
+        'A 6-week training plan with 4-5 guided sessions per week',
         'A curated nutrition and lifestyle playbook',
         'A simple 7-day meal plan to get started with ease',
         'Clear supplement guidance and recommendations',
         'A structured progress tracker to make your wins visible',
       ],
+      methodTitle: 'Functional Yoga Workouts™',
+      methodIntro:
+        'This program is based on my Functional Yoga Workouts™ Method — a progressive approach that combines yoga, mobility and strength into one effective system.',
+      methodBullets: [
+        'These are not traditional yoga classes.',
+        'Each workout uses compound, functional movements to build strength, improve mobility and support how your body actually moves in daily life.',
+        'The sessions are designed to build on each other, so your body can gradually adapt, get stronger and move with more ease — without unnecessary stress.',
+      ],
+      methodResult:
+        'The result: a body that feels stronger, more mobile and more like your own again.',
       supportTitle: 'Personal Support',
       support: [
         'Weekly live calls on topics like belly fat, night sweats, mood swings, and changing body weight.',
